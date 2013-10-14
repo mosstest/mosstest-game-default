@@ -1,0 +1,15 @@
+*.class
+*.jar
+*.war
+*.ear
+/bin
+/lib
+*.db
+/doc
+*.dll
+*.exe
+*.so
+COMMIT_EDITMSG
+.DS_Store
+/worlds
+/cache
