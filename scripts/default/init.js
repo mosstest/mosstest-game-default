@@ -1,9 +1,12 @@
-var dirt = moss.registerNode("default:dirt", "Dirt", new Packages.net.mosstest.scripting.DefaultNodeParams(), "default/dirt.png", false, 0);
+var dirtTex = new Packages.net.mosstest.scripting.CubeTextureSet();
+dirtTex.setAll("default/dirt.png");
+var dirt = moss.registerNode("default:dirt", "Dirt", new Packages.net.mosstest.scripting.DefaultNodeParams(), dirtTex, false, 0);
 moss.registerNodeAlias("mg:dirt", "default:dirt");
 moss.registerNodeAlias("mg:stone", "default:dirt");
 // moss.registerNodeAlias("mg:air", "default:dirt");
 moss.registerNodeAlias("mg:sand", "default:dirt");
-
-var grass = moss.registerNode("default:grass", "Grass",  new Packages.net.mosstest.scripting.DefaultNodeParams(), "default/grass.png", false, 0); 
+var grassTex = new Packages.net.mosstest.scripting.CubeTextureSet();
+grassTex.setAll("default/grass.png");
+var grass = moss.registerNode("default:grass", "Grass",  new Packages.net.mosstest.scripting.DefaultNodeParams(), grassTex, false, 0); 
 grass.dropItem = dirt.dropItem;
 moss.registerNodeAlias("mg:grass", "default:grass");
